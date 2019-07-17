@@ -23,4 +23,7 @@ curl -L https://download.visualstudio.microsoft.com/download/pr/4bc4d8e7-e736-43
 mkdir -p ~/dotnet && tar zxf /tmp/dotnet-sdk-2.2.301-linux-arm.tar.gz -C ~/dotnet
 grep -qxF 'export DOTNET_ROOT=$HOME/dotnet' ~/.bashrc || echo 'export DOTNET_ROOT=$HOME/dotnet' >>~/.bashrc
 grep -qxF 'export PATH=$PATH:$HOME/dotnet' ~/.bashrc || echo 'export PATH=$PATH:$HOME/dotnet' >>~/.bashrc
-source ~/.bashrc
+
+# enable ssh
+sudo systemctl enable ssh
+sudo systemctl start ssh
