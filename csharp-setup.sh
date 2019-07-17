@@ -12,6 +12,7 @@ sudo apt-mark hold code-oss
 
 # install vs code C# support
 code-oss --install-extension ms-vscode.csharp --force
+code-oss --install-extension jmrog.vscode-nuget-package-manager --force
 
 # install .net core dependencies
 sudo apt-get -y install curl libunwind8 gettext
