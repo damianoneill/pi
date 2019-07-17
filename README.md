@@ -3,7 +3,7 @@
 To set up a C# env on raspberry run the following:
 
 ```sh
-curl -L https://raw.githubusercontent.com/damianoneill/pi/master/csharp-setup.sh | sudo bash
+curl -L https://raw.githubusercontent.com/damianoneill/pi/master/csharp-setup.sh | bash
 ```
 
 After this completes, reboot the pi

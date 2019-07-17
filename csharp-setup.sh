@@ -6,15 +6,15 @@ wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key ad
 curl -L https://code.headmelted.com/installers/apt.sh | sudo bash
 
 # https://github.com/headmelted/codebuilds/issues/67
-apt-get -y --allow-downgrades install code-oss=1.29.0-1539702286
-apt-mark hold code-oss
-apt-mark unhold code-oss
+sudo apt-get -y --allow-downgrades install code-oss=1.29.0-1539702286
+sudo apt-mark hold code-oss
+sudo apt-mark unhold code-oss
 
 # install vs code C# support
 code-oss --install-extension ms-vscode.csharp
 
 # install .net core dependencies
-apt-get install curl libunwind8 gettext
+sudo apt-get install curl libunwind8 gettext
 
 # install dotnet sdk
 # see https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.301-linux-arm32-binaries contents for url below
