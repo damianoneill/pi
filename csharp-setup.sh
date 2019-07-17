@@ -23,8 +23,3 @@ mkdir -p ~/dotnet && tar zxf /tmp/dotnet-sdk-2.2.301-linux-arm.tar.gz -C ~/dotne
 grep -qxF 'export DOTNET_ROOT=$HOME/dotnet' ~/.bashrc || echo 'export DOTNET_ROOT=$HOME/dotnet' >>~/.bashrc
 grep -qxF 'export PATH=$PATH:$HOME/dotnet' ~/.bashrc || echo 'export PATH=$PATH:$HOME/dotnet' >>~/.bashrc
 source ~/.bashrc
-
-# setup docker
-sudo apt-get install lsb-release
-curl -sSL https://get.docker.com | sh
-sudo usermod -aG docker pi
